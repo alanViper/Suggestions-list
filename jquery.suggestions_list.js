@@ -13,12 +13,12 @@
 (function($){
 	$.suggestions_list = function(settings){
 		var config = {
-			"id_input" 		: false,
+			"id_input": false,
 			"id_screen_list": false,
-			"id_loading" 	: false,
-			"url" 			: false,
-			"data_link_rev" : false,
-			"method_type" 	: "GET"
+			"id_loading": false,
+			"url": false,
+			"data_link_rev": false,
+			"method_type": "GET"
 			};
 
 		if(settings){jQuery.extend(config, settings);}
