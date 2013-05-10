@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>Suggestions list</title>
+
+	<meta charset="utf-8"/>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+	<script src="../jquery.suggestions_list.js" type="text/javascript"></script>
+</head>
+<body>
+
+<p>O plugin Suggestions list é responsável somente pelo front-end, o processamento da busca no back-end fica a cargo do desenvolvedor.</p>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$.suggestions_list({
+		id_input: "input_test",
+		id_screen_list: "suggestions",
+		id_loading: "ajax_load",
+		url: "example_list.html",
+		data_link_rev: "text_list",
+		method_type: "POST"
+	});
+})
+</script>
+
+Exemplo busca: <input type="text" id="input_test" name="input_test" /><img src="../ajax-loader.gif" alt="" id="ajax_load" style="display:none;" />
+<div id="suggestions"></div>
+
+</body>
+</html>
