@@ -13,7 +13,7 @@
 (function($){
 	$.suggestions_list = function(settings){
 		var config = {
-			"id_input" 			: false,
+			"id_input"			: false,
 			"id_screen_list" 	: false,
 			"id_loading" 		: false,
 			"url" 				: false,
